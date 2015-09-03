@@ -15,7 +15,7 @@ app.get('/', function(request, response) {
 
 app.get('/master', function(request, res) {
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify({ "master_link": "http://10.44.193.144:5000/master", "title":"Dublin Real Time", "image":"http://10.44.193.144:5000/images/bus.jpg" }));
+    res.send(JSON.stringify({ "master_link": "https://vast-falls-7137.herokuapp.com", "title":"Dublin Real Time", "image":"https://vast-falls-7137.herokuapp.com/images/bus.jpg" }));
 });
 
 app.listen(app.get('port'), function() {
