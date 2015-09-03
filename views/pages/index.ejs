@@ -5,23 +5,20 @@
 
     <link rel="stylesheet" href="stylesheets/style.css">
 
-    <script>
-    function showAndroidToast(toast)
-    {
-    var text = '{"service":"John","characterstics":"Doe", "descripter":"ddjd"}';
-    //alert(text)
-    Android.showToast(text);
-    }
+    <script type="text/javascript">
+        function showAndroidToast(toast) {
+            alert(toast);
+        }
     </script>
 
   </head>
-  <body onload="showAndroidToast('Hello Android!')">
+  <body>
     <header>
       <span>A browser for connecting world</span>
       <h1>Browsy</h1>
     </header>
 
-    <input type="button" value="RED" onClick="showAndroidToast('Hello Android!')"/>
+    <input type="button" value="MAD" onClick="showAndroidToast('Hello Android!')"/>
     <br><br>
 
     <input type="button" value="GREEN" onClick="showAndroidToast('Hello Android!')"/>

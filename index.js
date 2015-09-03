@@ -13,8 +13,11 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/master', function(request, res) {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify({ "master_link": "http://10.44.193.144:5000/master", "title":"Dublin Real Time", "image":"http://10.44.193.144:5000/images/bus.jpg" }));
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
-
-
