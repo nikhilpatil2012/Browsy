@@ -15,7 +15,7 @@ app.get('/', function(request, response) {
 
 app.get('/master', function(request, res) {
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify({ "master_link": "https://vast-falls-7137.herokuapp.com", "title":"Dublin Real Time", "image":"https://vast-falls-7137.herokuapp.com/images/bus.jpg" }));
+    res.send(JSON.stringify({ "master_link": "http://ec2-52-11-75-142.us-west-2.compute.amazonaws.com:9000/", "title":"Dublin Real Time", "image":"http://ec2-52-11-75-142.us-west-2.compute.amazonaws.com:9000/images/bus.jpg" }));
 });
 
 app.listen(app.get('port'), function() {
